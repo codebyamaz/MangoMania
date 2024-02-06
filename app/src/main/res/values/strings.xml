@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Food Card</string>
+    <string name="food_card">Food Card</string>
+    <string name="card">Card</string>
+    <string name="good">Good</string>
+    <string name="food">Food</string>
+    <string name="great">Great</string>
+    <string name="life">Life!</string>
+    <string name="get_started">Get Started</string>
+    <string name="need_some_help">Need Some Help?</string>
+    <string name="getting_started">Getting Started</string>
+    <string name="create_account_to_continue">Create account to continue</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in">\tSign In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="phone">Phone</string>
+    <string name="name">name</string>
+    <string name="Name">Name</string>
+    <string name="reminder_me_next_time">Reminder me next time</string>
+    <string name="forget_your_password">Forget your password</string>
+    <string name="let_s_get_something">Let\'s get something</string>
+    <string name="good_to_see_you_back">Good to see you back</string>
+    <string name="Sign_up">\tSign Up</string>
+    <string name="don_t_have_account">Don\'t have account?</string>
+    <string name="how_was">How was</string>
+    <string name="your">your</string>
+    <string name="foodd">Food?</string>
+    <string name="done">Done</string>
+    <string name="pakistan">Pakistan</string>
+    <string name="online_food">Online Food</string>
+    <string name="delivery">Delivery!</string>
+    <string name="burger">Burger</string>
+    <string name="confirm_your_address">Confirm Your Address</string>
+    <string name="get_your_order_on_your_doors">Get your order on your doors</string>
+</resources>

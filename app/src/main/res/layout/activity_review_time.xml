@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffc620"
+    tools:context=".ReviewTime">
+
+
+    <!-- - - - - - - - -layout one- - - - - - - - - -->
+
+    <LinearLayout
+        android:id="@+id/review_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/how_was"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+
+    </LinearLayout>
+
+    <!-- - - - - - - - -layout one- - - - - - - - - -->
+
+
+    <!-- - - - - - - - -layout second- - - - - - - - - -->
+
+    <LinearLayout
+        android:id="@+id/review_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/review_layout_1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/your"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/foodd"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <!-- - - - - - - - -layout second- - - - - - - - - -->
+
+
+    <ImageView
+        android:id="@+id/reViewImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/review_layout_2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/reviewemoji1" />
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/CustomDesign"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/btnReciew_done"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="50dp"
+        android:thumbTint="@color/white" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnReciew_done"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="13dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/done"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

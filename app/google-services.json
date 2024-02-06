@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "800483339027",
+    "firebase_url": "https://rbzium-food-card-default-rtdb.firebaseio.com",
+    "project_id": "rbzium-food-card",
+    "storage_bucket": "rbzium-food-card.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800483339027:android:46169a60c1a05c77fe08e6",
+        "android_client_info": {
+          "package_name": "com.example.mangoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800483339027-q8sj92jhtdhekhhp39cj5dklircmm76n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqApBRLzdLTWs7GtXoRMTSlVKFa9_Iw8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800483339027-q8sj92jhtdhekhhp39cj5dklircmm76n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800483339027:android:13165d32ed84c6befe08e6",
+        "android_client_info": {
+          "package_name": "com.rbzium.foodcard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800483339027-5pfkvvnk9bkvqkfc05m763k138nv0e01.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rbzium.foodcard",
+            "certificate_hash": "5fc7c27d5201603716d6d88ff8f6797845659ca0"
+          }
+        },
+        {
+          "client_id": "800483339027-q8sj92jhtdhekhhp39cj5dklircmm76n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqApBRLzdLTWs7GtXoRMTSlVKFa9_Iw8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800483339027-q8sj92jhtdhekhhp39cj5dklircmm76n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
