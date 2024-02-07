@@ -95,7 +95,6 @@ public class cart_Adapter extends RecyclerView.Adapter<cart_Adapter.ViewHolder> 
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         OrderPriceRef.removeValue();
-
                     }
 
                     @Override

@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="22dp"
-                android:layout_marginStart="45dp"
+                android:layout_marginStart="20dp"
                 android:layout_toEndOf="@id/place_order_image"
                 android:text="Rs. "
                 android:textColor="@color/black"

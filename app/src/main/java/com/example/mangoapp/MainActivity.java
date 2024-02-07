@@ -38,6 +38,7 @@ import com.example.mangoapp.iteslist.items_modelClass;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity implements Category_onClick_Interface {
 
@@ -61,6 +62,7 @@ public class MainActivity extends AppCompatActivity implements Category_onClick_
     DatabaseReference CartCountRef;
     DatabaseReference CartCheckRef;
     DatabaseReference ConfirmedStatusRef;
+    TextView mangoType;
     String ConfirmValue="false";
 
     @Override
@@ -75,6 +77,9 @@ public class MainActivity extends AppCompatActivity implements Category_onClick_
         Username = findViewById(R.id.username);
         AddToCart = findViewById(R.id.addtocart);
         CartItemCount = findViewById(R.id.cart_count);
+        mangoType = findViewById(R.id.t3);
+
+        mangoType.setText("Ataulfo");
 
         GetAccountPhone();
         UserCartCount();
@@ -157,6 +162,7 @@ public class MainActivity extends AppCompatActivity implements Category_onClick_
         CategoryList = new ArrayList<>();
 
         CategoryAdapter = new category_adapterClass(this, CategoryList, this);
+
         CategoryRecyclerView.setAdapter(CategoryAdapter);
 
 
@@ -402,7 +408,21 @@ public class MainActivity extends AppCompatActivity implements Category_onClick_
     @Override
     public void onItemClick(String position) {
         ItemPosition = position;
-        Toast.makeText(this, "" + ItemPosition, Toast.LENGTH_SHORT).show();
+        if (Objects.equals(position, "burger")) {
+            mangoType.setText("Ataulfo");
+        }
+        if (Objects.equals(position, "chicken")) {
+            mangoType.setText("Alphonso");
+        }
+        if (Objects.equals(position, "fries")) {
+            mangoType.setText("Kent");
+        }
+        if (Objects.equals(position, "ice cream")) {
+            mangoType.setText("Langra");
+        }
+        if (Objects.equals(position, "pizza")) {
+            mangoType.setText("Tommy Atkins");
+        }
         GetRecyclerViewData();
 
     }

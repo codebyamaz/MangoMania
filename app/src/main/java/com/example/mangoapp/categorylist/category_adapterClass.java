@@ -108,16 +108,16 @@ public class category_adapterClass extends RecyclerView.Adapter<category_adapter
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(147, 147);
             holder.Category_Background.setLayoutParams(layoutParams);
 
-//            holder.Category_Background.setBackground(ContextCompat.getDrawable(CategoryContext, R.drawable.category_bg_select));
-//            holder.CategoryImage.setColorFilter(Color.parseColor("#ffffff"));
+            holder.Category_Background.setBackground(ContextCompat.getDrawable(CategoryContext, R.drawable.category_bg_select));
+//            holder.CategoryImage.setColorFilter(Color.parseColor("#ffffed"));
 
 
         } else {
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(137, 137);
 
             holder.Category_Background.setLayoutParams(layoutParams);
-//            holder.Category_Background.setBackground(ContextCompat.getDrawable(CategoryContext, R.drawable.category_bg));
-//            holder.CategoryImage.setColorFilter(Color.parseColor("#ffcc00"));
+            holder.Category_Background.setBackground(ContextCompat.getDrawable(CategoryContext, R.drawable.category_bg));
+//            holder.CategoryImage.setColorFilter(Color.parseColor("#ffffed"));
 
         }
 

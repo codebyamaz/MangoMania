@@ -175,6 +175,7 @@ public class Cart extends AppCompatActivity implements CartItemRemove {
             @Override
             public void onClick(View view) {
 
+//                TotalPriceTV.setText("0");
                 EnableLocation();
 
 //                if (LocationCheck.equals("false")) {

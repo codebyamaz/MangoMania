@@ -21,8 +21,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.example.mangoapp.cart.cart_Adapter;
-import com.example.mangoapp.cart.cart_model_class;
 import com.example.mangoapp.order_status.Order_status_adapterClass;
 import com.example.mangoapp.order_status.Order_status_modelClass;
 
@@ -143,7 +141,20 @@ public class OrderStatus extends AppCompatActivity {
         btnOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(OrderStatus.this,MainActivity.class));
+                // Clear order status data
+                DatabaseReference orderStatusRef = FirebaseDatabase.getInstance().getReference("orders/" + phone + "/products/");
+                orderStatusRef.removeValue();
+
+                // Clear cart data
+                DatabaseReference cartRef = FirebaseDatabase.getInstance().getReference("cart/" + phone);
+                cartRef.removeValue();
+
+                // Clear CartPrice data
+                DatabaseReference calculateRef = FirebaseDatabase.getInstance().getReference("CartPrice/" + phone);
+                calculateRef.removeValue();
+
+                // Start the MainActivity (or Cart activity if needed)
+                startActivity(new Intent(OrderStatus.this, MainActivity.class));
             }
         });
 

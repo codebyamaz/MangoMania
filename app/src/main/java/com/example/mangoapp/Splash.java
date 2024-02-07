@@ -180,7 +180,7 @@ public class Splash extends AppCompatActivity {
 
                 try {
                     LocationSettingsResponse response = task.getResult(ApiException.class);
-                    Toast.makeText(Splash.this, "GPS Enabled!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "GPS Enabled!", Toast.LENGTH_SHORT).show();
 
                 } catch (ApiException e) {
 
