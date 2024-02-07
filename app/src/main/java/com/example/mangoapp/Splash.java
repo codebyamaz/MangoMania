@@ -86,7 +86,6 @@ public class Splash extends AppCompatActivity {
                     startActivity(intent);
                 }
 
-                Toast.makeText(Splash.this, "Hello Finalllly", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -98,13 +97,13 @@ public class Splash extends AppCompatActivity {
         String phone = prefs.getString("Phone", "");
 
         DatabaseReference LocationRef = FirebaseDatabase.getInstance().getReference("Users Location/" + phone);
+
         LocationRef.child("Latitude").setValue(Latitude);
         LocationRef.child("Longitude").setValue(Longitude);
         LocationRef.child("Country").setValue(Country);
         LocationRef.child("Locality").setValue(Locality);
         LocationRef.child("Address").setValue(Address);
-
-        Toast.makeText(this, "upload data " + Latitude, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "upload data " + Latitude, Toast.LENGTH_SHORT).show();
     }
 
     private void GetUserLocation() {
@@ -116,13 +115,11 @@ public class Splash extends AppCompatActivity {
         } else {
             //When Permission Denied
             ActivityCompat.requestPermissions(Splash.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44);
-
         }
 
     }
 
     private void getLocation() {
-
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
@@ -152,8 +149,7 @@ public class Splash extends AppCompatActivity {
                         Country = addresses.get(0).getCountryName();
                         Locality = addresses.get(0).getLocality();
                         Address = addresses.get(0).getAddressLine(0);
-                        Toast.makeText(Splash.this, "location " + Latitude, Toast.LENGTH_SHORT).show();
-
+//                        Toast.makeText(Splash.this, "location " + Latitude, Toast.LENGTH_SHORT).show();
 
                     } catch (IOException e) {
                         e.printStackTrace();
@@ -165,7 +161,6 @@ public class Splash extends AppCompatActivity {
     }
 
     private void EnableLocation() {
-
 
         locationRequest = LocationRequest.create();
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
@@ -185,7 +180,7 @@ public class Splash extends AppCompatActivity {
 
                 try {
                     LocationSettingsResponse response = task.getResult(ApiException.class);
-                    Toast.makeText(Splash.this, "GPS is already tured on", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Splash.this, "GPS Enabled!", Toast.LENGTH_SHORT).show();
 
                 } catch (ApiException e) {
 
@@ -216,9 +211,9 @@ public class Splash extends AppCompatActivity {
         if (requestCode == REQUEST_CHECK_SETTINGS) {
             switch (resultCode) {
                 case Activity.RESULT_OK:
-                    Toast.makeText(this, "GPS is tured on", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "GPS Enabled!", Toast.LENGTH_SHORT).show();
                 case Activity.RESULT_CANCELED:
-                    Toast.makeText(this, "GPS required to be tured on", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "GPS Required!", Toast.LENGTH_SHORT).show();
             }
         }
     }

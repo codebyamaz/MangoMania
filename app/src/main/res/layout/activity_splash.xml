@@ -21,16 +21,19 @@
             android:id="@+id/burger_logo"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_marginTop="5dp"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="10dp"
-            android:src="@drawable/burger_icon" />
+            android:src="@drawable/mango7" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="10dp"
-            android:text="@string/food"
+            android:layout_marginTop="5dp"
+            android:text="Mango"
+            android:fontFamily="@font/skbold"
             android:textColor="@color/black"
             android:textSize="25sp" />
 
@@ -39,8 +42,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="5dp"
-            android:text="@string/card"
+            android:layout_marginStart="0dp"
+            android:fontFamily="@font/skbold"
+            android:text="Mania"
+            android:layout_marginTop="5dp"
             android:textColor="@color/white"
             android:textSize="25sp" />
 
@@ -56,26 +61,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/splash_layout_1"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="100dp"
         android:gravity="center"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:text="@string/good"
+            android:layout_gravity="center"
+            android:layout_marginEnd="7dp"
+            android:fontFamily="@font/lato_black"
+            android:gravity="center"
+            android:text="Each Slice of"
             android:textColor="@color/black"
             android:textSize="40sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/food"
-            android:textColor="@color/white"
-            android:textSize="40sp"
-            android:textStyle="bold" />
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/food"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="40sp"-->
+<!--            android:textStyle="bold" />-->
 
     </LinearLayout>
 
@@ -90,21 +98,25 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/splash_layout_2"
         android:gravity="center"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:text="@string/great"
-            android:textColor="@color/black"
-            android:textSize="40sp"
-            android:textStyle="bold" />
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="7dp"-->
+<!--            android:text="@string/great"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="40sp"-->
+<!--            android:textStyle="bold" />-->
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/life"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lato_black"
+            android:gravity="center"
+            android:text="Delight"
             android:textColor="@color/white"
             android:textSize="40sp"
             android:textStyle="bold" />
@@ -121,8 +133,8 @@
         android:layout_height="300dp"
         android:layout_below="@+id/splash_layout_3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/man_chief_icon" />
+        android:layout_marginTop="10dp"
+        android:src="@drawable/splashimage" />
     <!-- - - - - - - - -layout third- - - - - - - - - -->
 
 
@@ -134,7 +146,7 @@
         android:layout_height="60dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/btn_back_shape">
 
         <TextView

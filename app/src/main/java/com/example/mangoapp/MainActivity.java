@@ -146,7 +146,6 @@ public class MainActivity extends AppCompatActivity implements Category_onClick_
 //            }
 //        });
 
-
         CategoryReference = FirebaseDatabase.getInstance().getReference("Category");
 
         CategoryRecyclerView.setHasFixedSize(true);
@@ -156,6 +155,7 @@ public class MainActivity extends AppCompatActivity implements Category_onClick_
         CategoryRecyclerView.setLayoutManager(CategoryLayout);
 
         CategoryList = new ArrayList<>();
+
         CategoryAdapter = new category_adapterClass(this, CategoryList, this);
         CategoryRecyclerView.setAdapter(CategoryAdapter);
 
@@ -183,7 +183,6 @@ public class MainActivity extends AppCompatActivity implements Category_onClick_
 
         GetRecyclerViewData();
         GetUsername();
-
 
     }
 
